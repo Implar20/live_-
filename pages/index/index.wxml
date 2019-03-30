@@ -1,0 +1,36 @@
+<view class="live_list">
+    <view class="list_item" 
+        wx:for="{{ live }}" 
+        wx:key="*this"
+    >
+        <image src="{{ item.liveImg }}" 
+            bindtap="toLive" 
+            data-index="{{ item.liveid }}"
+        ></image>
+        <view class="user_info">
+            <view class="user_title">{{ item.liveName }}</view>
+            <text class="toLive" 
+                bindtap="toLive" 
+                data-index="{{ item.liveid }}"
+            >进入直播间 ></text>
+        </view>
+    </view>
+</view>
+<view class="mask" style="display: {{ display }}">
+    <view class="mask_upper">
+        <icon type="info" size="23" />
+        <text>请登录</text>
+    </view>
+    <view class="mask_down">
+        <button 
+            class="login" 
+            type="primary" 
+            open-type="getUserInfo" 
+            bindgetuserinfo="onGotUserInfo"
+        >登录</button>
+    </view>
+</view>
+<view 
+    class="mark" 
+    style="display: {{ display }}"
+></view>

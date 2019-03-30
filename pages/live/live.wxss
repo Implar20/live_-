@@ -1,0 +1,86 @@
+.header {
+  width: 100%;
+  height: 35%;
+}
+.header live-player  {
+  width: 100%;
+  height: 100%;
+}
+.section {
+  width: 100%;
+  height: 57%;
+}
+.section .connect_flag {
+  text-align: center;
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  background-color: rgb(236, 247, 179);
+  font-size: 26rpx;
+}
+.section .chat {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.chat .chat_user {
+  padding-left: 20rpx;
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 32rpx;
+}
+.chat_user .user_title {
+  color: #a3a3a3;
+}
+.chat_user .user_msg {
+  color: #000;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  height: 8%;
+  background-color: #f5f5f5;
+  border: 2rpx solid #dcdcdc;
+}
+.footer input {
+  width: 80%;
+  height: 60%;
+  background-color: #fff;
+  margin-left: 10rpx;
+  border-radius: 10rpx;
+  padding: 5rpx 20rpx;
+  border: 2rpx solid #dcdcdc;
+}
+.inS {
+  font-size: 24rpx;
+}
+.footer .footer_send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  width: 10%;
+  padding: 5rpx 0;
+  background-color: #fff;
+  border-radius: 10rpx;
+  font-size: 25rpx;
+  margin-left: 10rpx;
+}
+.footer_send image {
+  width: 80%;
+  height: 80%;
+}
+.footer_send:active {
+  position: relative;
+  top: 1rpx;
+  background-color: #eee;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

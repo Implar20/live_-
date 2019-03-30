@@ -1,0 +1,43 @@
+<view 
+	class="page"
+	style="width:{{ page_w }}px;height:{{ page_h }}px"
+>
+	<view class="header">
+		<live-player 
+			src="{{ liveShow.liveAddress }}" 
+			mode="live" 
+			autoplay
+		/>
+	</view>
+	<view class="section">
+		<scroll-view class="chat"
+			scroll-y="true"
+			scroll-into-view="msg{{ msg_list.length - 1 }}"
+		>
+			<view 
+				class="connect_flag"
+				style="display:{{ show }}"
+			>已连接聊天</view>
+			<view class="chat_user" wx:for="{{ msg_list }}" id="msg{{ index }}">
+				<text class="user_title">{{ item[2] }} : </text>
+				<text class="user_msg">{{ item[0] }}</text>
+			</view>
+		</scroll-view>
+	</view>
+	<view class="footer" style="bottom:{{ input_b }}px">
+		<input 
+			maxlength="27" 
+			placeholder-class="inS" 
+			confirm-type="send" 
+			bindfocus="focus" 
+			bindblur='no_focus' 
+			bindinput="inT" 
+			bindconfirm="sendMsg" 
+			adjust-position="{{ false }}" 
+			value="{{ msg }}"
+		></input>
+		<button class="footer_send" bindtap="sendMsg">
+			<image src="../image/send.png"></image>
+		</button>
+	</view>
+</view>

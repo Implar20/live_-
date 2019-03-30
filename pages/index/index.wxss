@@ -1,0 +1,79 @@
+page {
+    background-color: #eee;
+}
+.live_list {
+    width: 100%;
+}
+.live_list .list_item {
+    width: 100%;
+    height: 450rpx;
+}
+.list_item image {
+    display: block;
+    width: 100%;
+    height: 370rpx;
+}
+.list_item .user_info {
+    background-color: #fff;    /*fe787e*/
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80rpx;
+}
+.user_info .user_title {
+    line-height: 80rpx;
+    margin-left: 30rpx;
+    font-size: 30rpx;
+    font-weight: 700;
+    width: 350rpx;
+    height: 80rpx;
+}
+.user_info .toLive {
+    margin-left: 200rpx;
+    font-size: 25rpx;
+    color: rgb(170, 167, 167);
+}
+page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.mask {
+    position: absolute;
+    top: 300rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500rpx;
+    height: 300rpx;
+    background-color: #fff;
+    z-index: 1000;
+}
+.mask .mask_upper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40rpx;
+    width: 100%;
+    height: 220rpx;
+}
+.mask .mask_down {
+    width: 100%;
+    height: 80rpx;
+}
+.mask_down button {
+    width: 100%;
+    height: 80rpx;
+    font-size: 30rpx;
+    border-radius: 0;
+}
+.mask_down button::after {
+    border: none;
+}
+.mark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(95, 95, 95, 0.8);
+}
